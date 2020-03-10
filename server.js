@@ -5,8 +5,9 @@ const bodyParser = require("body-parser");
 const path = require("path")
 
 // VARIABLES
-const PORT = 8080;
-const MONGODB_URI = "mongodb://localhost:27017/quimg"
+const host = '0.0.0.0';
+const PORT = process.env.PORT || 3000; 
+const MONGODB_URI = "mongodb://localhost:27017";
 const app = express();
 
 // MIDDLEWARE
